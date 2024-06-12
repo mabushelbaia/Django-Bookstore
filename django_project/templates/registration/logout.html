@@ -1,0 +1,12 @@
+<!-- templates/account/logout.html -->
+{% extends "_base.html" %}
+{% block title %}Log Out{% endblock %}
+{% block content %}
+<h1>Log Out</h1>
+<p>Are you sure you want to log out?</p>
+<form method="post" action="{% url 'account_logout' %}">
+{% csrf_token %}
+{{ form }}
+<button class="btn btn-danger" type="submit">Log Out</button>
+</form>
+{% endblock content %}
