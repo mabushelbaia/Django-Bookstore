@@ -1,7 +1,5 @@
 # Django Bookstore
-A simple Library that showcases the use of Django and Django Rest Framework, with a simple frontend Tailwind CSS.
-The project is shipped in multiple docker containers, running an Nginx server, a Django server running WSGI, and a Postgres database.
-
+a full-stack web application using Django and Tailwind CSS to display a collection of books. Utilized Nginx as a reverse proxy server and Gunicorn as the WSGI server to deploy the application using Docker.
 ## Installation
 1. Clone the repository
 ```bash
