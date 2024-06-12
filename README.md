@@ -1,4 +1,4 @@
-# Django Library
+# Django Bookstore
 A simple Library that showcases the use of Django and Django Rest Framework, with a simple frontend Tailwind CSS.
 The project is shipped in multiple docker containers, running an Nginx server, a Django server running WSGI, and a Postgres database.
 
