@@ -1,5 +1,6 @@
 # Django Bookstore
 a full-stack web application using Django and Tailwind CSS to display a collection of books. Utilized Nginx as a reverse proxy server and Gunicorn as the WSGI server to deploy the application using Docker.
+![Bookstore Image](/merged_image.png)
 ## Installation
 1. Clone the repository
 ```bash
