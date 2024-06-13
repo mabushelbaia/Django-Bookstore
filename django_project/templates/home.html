@@ -1,6 +1,77 @@
 <!-- templates/home.html -->
-{% extends "_base.html" %} {% block title %}Home{% endblock title %} 
-{% load static %} 
-{% block content %}
-
+{% extends "_base.html" %} {% block title %}Home{% endblock title %} {% load
+static %} {% block content %}
+<section>
+  <div
+    class="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-neutral-600 dark:text-white md:px-8 xl:flex"
+  >
+    <div class="space-y-5 max-w-2xl mx-auto text-center">
+      <div
+        class="flex flex-wrap items-center justify-center gap-6"
+      >
+        <div class="flex items-center gap-x-2 text-neutral-500 dark:text-white text-sm">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M16.403 12.652a3 3 0 000-5.304 3 3 0 00-3.75-3.751 3 3 0 00-5.305 0 3 3 0 00-3.751 3.75 3 3 0 000 5.305 3 3 0 003.75 3.751 3 3 0 005.305 0 3 3 0 003.751-3.75zm-2.546-4.46a.75.75 0 00-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          Trusted
+        </div>
+        <div class="flex items-center gap-x-2 text-neutral-500 dark:text-white text-sm">
+          <i class="fas fa-book"></i>
+          {{ book_count }} Books
+        </div>
+        <div class="flex items-center gap-x-2 text-neutral-500 dark:text-white   text-sm">
+          <i class="fas fa-users"></i>
+          {{ user_count }} Users
+        </div>
+      </div>
+      <h1 class="text-4xl text-neutral-800 dark:text-white font-extrabold mx-auto md:text-5xl">
+        Welcome to Django Bookstore
+      </h1>
+      <p class="max-w-xl mx-auto ">
+        A simple Django project that allows users to browse and purchase books.
+        The project is built using Django, Tailwind CSS and PostgreSQL
+      </p>
+      <div
+        class="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0"
+      >
+        <a
+          href="{% url "notebooks" %}"
+          class="flex items-center justify-center gap-x-2 py-2 px-4 text-white dark:text-neutral-800 dark:bg-white font-medium bg-neutral-800 duration-150 hover:bg-neutral-700 dark:hover:bg-neutral-200 active:bg-neutral-900 rounded-lg md:inline-flex"
+        >
+          Browse Books
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://github.com/mabushelbaia/Django-Bookstore"
+          target="_blank"
+          class="flex items-center justify-center gap-x-2 py-2 px-4 text-neutral-700 hover:text-neutral-500 hover:dark:text-neutral-200 font-medium duration-150 active:bg-neutral-100 dark:text-white dark:border-white border border-neutral-600  rounded-lg md:inline-flex"
+        >
+          View Repository
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock content %}
+

@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "preline": "^2.3.0",
+    "tailwindcss": "^3.4.4"
+  },
+  "scripts": {
+    "build": "tailwindcss  -i django_project/static/css/input.css -o django_project/static/css/output.css --minify",
+    "build:watch": "tailwindcss  -i django_project/static/css/input.css -o django_project/static/css/output.css --watch"
+  }
+}
