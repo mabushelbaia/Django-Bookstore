@@ -16,7 +16,7 @@ SECRET_KEY=your_secret_key
 ```bash
 docker-compose up
 ```
-3. Visit `http://localhost:8000` in your browser
+3. Visit `http://localhost` in your browser
 
 ## Future Improvements
 - [ ] Add search functionality
