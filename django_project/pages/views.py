@@ -1,4 +1,3 @@
-from discord import User
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.views.generic import TemplateView
