@@ -49,7 +49,7 @@
         {% endif %}
         <a
           href="{% static 'NotesForProfessionals/pdfs/' %}{{ book.pdf_url }}"
-          download="{{ title }}.pdf"
+          download="{{ book.title }}.pdf"
         >
           <button
             class="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-neutral-800 rounded hover:bg-neutral-700 dark:hover:bg-neutral-600 focus:bg-neutral-700 dark:focus:bg-neutral-600 focus:outline-none"
