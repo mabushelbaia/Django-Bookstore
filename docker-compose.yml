@@ -2,14 +2,16 @@ version: '3.7'
 
 services:
   django_gunicorn:
-    volumes:
-      - static:/static
-    env_file:
-      - .env
     build:
       context: .
+    volumes:
+      - static:/static
+      - ./django_project:/app  # Mount local directory into the container
+    env_file:
+      - .env
     ports:
       - "8000:8000"
+
   nginx:
     build: ./nginx
     volumes:
@@ -19,6 +21,7 @@ services:
     depends_on:
       - django_gunicorn
       - db
+
   db:
     image: postgres:13
     volumes:
@@ -26,9 +29,8 @@ services:
     ports:
       - "5432:5432"
     environment:
-      -  "POSTGRES_HOST_AUTH_METHOD=trust"
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
 
 volumes:
   static:
   postgres_data:
-    
