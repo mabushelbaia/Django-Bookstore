@@ -9,6 +9,6 @@ RUN pip install -r requirements.txt
 COPY ./django_project /app
 WORKDIR /app
 COPY ./entrypoint.sh /
-ENTRYPOINT [ "sh" , "/entrypoint.sh" ]
+ENTRYPOINT [ "sh" , "/entrypoint.sh"]
 
 
